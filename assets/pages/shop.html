@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>MoreCoffie</title>
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../img/coffee-bean-icon.png">
+    <script src="https://kit.fontawesome.com/4bedad74a7.js" crossorigin="anonymous"></script>
+</head>
+<body class = "other">
+  <header id = "myHeader" class =>
+    <div class = "container-fluid d-flex flex-row justify-content-between align-items-center">
+        <div class = " w-25 d-flex flex-row logo m-4 align-items-center justify-content-center" id = "logo">
+            <a href = "../../index.html"><img src = "../img/logo.png" alt = "bakery_logo"></a>
+        </div>
+        <div class = "w-50 m-4 d-flex justify-content-between align-items-center" id = "menuDisapere">
+            <ul class = " w-100 d-flex flex-row justify-content-start align-items-center text-center m-0 p-0" id = "navBarMain">
+            </ul>
+        </div>
+        <div class="w-25 d-flex justify-content-center align-items-center text-center" id = "LogIn">
+            <div class = "myOwnButton">
+              <button type="button" class="reg"><i class="fa fa-user pr-2" aria-hidden="true"></i>Log In</button>
+              <button type="button" class="reg pl-1"> / SignUp</button>
+            </div>
+        </div>
+        <div class="hamburger">
+          <span class="bar">
+          </span>
+          <span class="bar">
+          </span>
+          <span class="bar">
+          </span>
+        </div>
+    </div>
+</header>
+    <main class = "d-flex justify-content-center flex-column text-center align-items-center">
+        <div class="container-fluid mb-5 bg-dark aboutText d-flex justify-content-center">
+            <div class="col-12 w-full d-flex justify-content-center align-items-center text-center text-white">
+                <h1>Our Shop</h1>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-start align-items-center flex-row" id = "shopDefault">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-2 h-full d-flex justify-content-start text-center align-items-center flex-column" id = "filters">
+                <p class = "pb-3">FILLTER BY PRICE</p>
+                <section class="range-slider container">
+                    <span class="output outputOne"></span>
+                    <span class="output outputTwo"></span>
+                    <span class="full-range"></span>
+                    <span class="incl-range"></span>
+                    <input name="rangeOne" value="10" min="0" max="100" step="1" type="range">
+                    <input name="rangeTwo" value="90" min="0" max="100" step="1" type="range">
+                  </section>
+                  <button type="submit" class="button mybuttonCustom">Filter</button>
+                  <p class = "pt-3">FILLTER BY TYPE</p>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Beans
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Espresso
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Dark Coffee
+                      </label>
+                      </div>
+                      <p class = "pt-3">FILLTER BY COMPANY</p>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          LavAzza
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Verona
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Starbucks
+                        </label>
+                        </div>
+            </div>
+            <div class="container-fluid col-10 col-sm-12 col-md-12 col-lg-10 d-flex flex-wrap flex-row justify-content-center" id = "products">
+                <div class="card d-flex justify-content-center align-items-center myBg m-5 myClass myWave" style="width: 14vw;" >
+                    <div class = "midiCons position-relative">
+                      <img class="card-img-top" style = "width: 10vw;" src="../img/how_to_open_starbucks_coffee_bag.jpg" alt="Card image cap">
+                      <div class="midiConsIcons position-absolute justify-content-center flex-row w-100">
+                      <i class="fas fa-coffee p-2 coffieIcon myIclass " aria-hidden="true" onclick="changeIconCoffie(this)"></i>
+                      <i class="fa-solid fa-heart coffieIcon myIclass" onclick="changeIconHeart(this)"></i>
+                      <i class="fa fa-eye coffieIcon myIclass" aria-hidden="true" onclick="changeiconEye(this)"></i>
+                      <i class="fas fa-share coffieIcon myIclass" onclick="changeIconShare(this)"></i>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center" style="font-size: 1vw;">Beans</h5>
+                      <p class="card-text text-center" style="font-size: 1vw;">$45.</p>
+                      <a href="#" class="btn btn-primary" style="font-size: 0.8vw;">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="card d-flex justify-content-center align-items-center myBg m-5 myClass myWave" style="width: 14vw;">
+                    <div class = "midiCons position-relative">
+                      <img class="card-img-top" style = "width: 10vw;" src="../img/starbucksRoas.jpg" alt="Card image cap">
+                      <div class="midiConsIcons position-absolute justify-content-center flex-row w-100">
+                        <i class="fas fa-coffee p-2 coffieIcon myIclass" aria-hidden="true" onclick="changeIconCoffie(this)"></i>
+                        <i class="fa-solid fa-heart coffieIcon myIclass" onclick="changeIconHeart(this)"></i>
+                        <i class="fa fa-eye coffieIcon myIclass" aria-hidden="true" onclick="changeiconEye(this)"></i>
+                        <i class="fas fa-share coffieIcon myIclass" onclick="changeIconShare(this)"></i>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center" style="font-size: 1vw;">Roast</h5>
+                      <p class="card-text text-center"style="font-size: 1vw;">$45.</p>
+                      <a href="#" class="btn btn-primary" style="font-size: 0.8vw;">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="card d-flex justify-content-center align-items-center myBg m-5 myClass myWave" style="width: 14vw;">
+                    <div class = "midiCons position-relative">
+                      <img class="card-img-top" style = "width: 10vw;" src="../img/wholeBeansCoffie.jpg" alt="Card image cap">
+                      <div class="midiConsIcons position-absolute justify-content-center flex-row w-100">
+                        <i class="fas fa-coffee p-2 coffieIcon myIclass" aria-hidden="true" onclick="changeIconCoffie(this)"></i>
+                        <i class="fa-solid fa-heart coffieIcon myIclass" onclick="changeIconHeart(this)"></i>
+                        <i class="fa fa-eye coffieIcon myIclass" aria-hidden="true" onclick="changeiconEye(this)"></i>
+                        <i class="fas fa-share coffieIcon myIclass" onclick="changeIconShare(this)"></i>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center" style="font-size: 1vw;">Hole Beans</h5>
+                      <p class="card-text text-center" style="font-size: 1vw;">$45.</p>
+                      <a href="#" class="btn btn-primary" style="font-size: 1vw;">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="card d-flex justify-content-center align-items-center myBg m-5 myClass myWave" style="width: 14vw;">
+                    <div class = "midiCons position-relative">
+                      <img class="card-img-top" style = "width: 10vw;" src="../img/lavAzza_.jpg" alt="Card image cap">
+                      <div class="midiConsIcons position-absolute justify-content-center flex-row w-100">
+                        <i class="fas fa-coffee p-2 coffieIcon myIclass" aria-hidden="true" onclick="changeIconCoffie(this)"></i>
+                        <i class="fa-solid fa-heart coffieIcon myIclass" onclick="changeIconHeart(this)"></i>
+                        <i class="fa fa-eye coffieIcon myIclass" aria-hidden="true" onclick="changeiconEye(this)"></i>
+                        <i class="fas fa-share coffieIcon myIclass" onclick="changeIconShare(this)"></i>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center" style="font-size: 1vw;">Espresso</h5>
+                      <p class="card-text text-center" style="font-size: 1vw;">$45.</p>
+                      <a href="#" class="btn btn-primary" style="font-size: 1vw;">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="card d-flex justify-content-center align-items-center myBg m-5 myClass myWave" style="width: 14vw;">
+                    <div class = "midiCons position-relative">
+                      <img class="card-img-top" style = "width: 10vw;" src="../img/hazleNutInstantCoffie.jpg" alt="Card image cap">
+                      <div class="midiConsIcons position-absolute justify-content-center flex-row w-100">
+                        <i class="fas fa-coffee p-2 coffieIcon myIclass" aria-hidden="true" onclick="changeIconCoffie(this)"></i>
+                        <i class="fa-solid fa-heart coffieIcon myIclass" onclick="changeIconHeart(this)"></i>
+                        <i class="fa fa-eye coffieIcon myIclass" aria-hidden="true" onclick="changeiconEye(this)"></i>
+                        <i class="fas fa-share coffieIcon myIclass" onclick="changeIconShare(this)"></i>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center" style="font-size: 1vw;">Instant</h5>
+                      <p class="card-text text-center" style="font-size: 1vw;">$45.</p>
+                      <a href="#" class="btn btn-primary" style="font-size: 1vw;">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="card f-flex justify-content-center align-items-center myBg m-5 myClass myWave" style="width: 14vw;">
+                    <div class = "midiCons position-relative">
+                      <img class="card-img-top" style = "width: 10vw;" src="../img/espresso-kafa-lavazza.jpg" alt="Card image cap">
+                      <div class="midiConsIcons position-absolute justify-content-center flex-row w-100">
+                        <i class="fas fa-coffee p-2 coffieIcon myIclass" aria-hidden="true" onclick="changeIconCoffie(this)"></i>
+                        <i class="fa-solid fa-heart coffieIcon myIclass" onclick="changeIconHeart(this)"></i>
+                        <i class="fa fa-eye coffieIcon myIclass" aria-hidden="true" onclick="changeiconEye(this)"></i>
+                        <i class="fas fa-share coffieIcon myIclass" onclick="changeIconShare(this)"></i>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center" style="font-size: 1vw;">Espresso</h5>
+                      <p class="card-text text-center" style="font-size: 1vw;">$45.</p>
+                      <a href="#" class="btn btn-primary" style="font-size: 1vw;">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="card d-flex justify-content-center align-items-center myBg m-5 myClass myWave" style="width: 14vw;" >
+                    <div class = "midiCons position-relative">
+                      <img class="card-img-top" style = "width: 10vw;" src="../img/lavAzzaGOld.jpg" alt="Card image cap">
+                      <div class="midiConsIcons position-absolute justify-content-center flex-row w-100">
+                      <i class="fas fa-coffee p-2 coffieIcon myIclass " aria-hidden="true" onclick="changeIconCoffie(this)"></i>
+                      <i class="fa-solid fa-heart coffieIcon myIclass" onclick="changeIconHeart(this)"></i>
+                      <i class="fa fa-eye coffieIcon myIclass" aria-hidden="true" onclick="changeiconEye(this)"></i>
+                      <i class="fas fa-share coffieIcon myIclass" onclick="changeIconShare(this)"></i>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center" style="font-size: 1vw;">Beans</h5>
+                      <p class="card-text text-center" style="font-size: 1vw;">$45.</p>
+                      <a href="#" class="btn btn-primary" style="font-size: 0.8vw;">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="card d-flex justify-content-center align-items-center myBg m-5 myClass myWave" style="width: 14vw;" >
+                    <div class = "midiCons position-relative">
+                      <img class="card-img-top" style = "width: 10vw;" src="../img/espresoItaliano.jpg" alt="Card image cap">
+                      <div class="midiConsIcons position-absolute justify-content-center flex-row w-100">
+                      <i class="fas fa-coffee p-2 coffieIcon myIclass " aria-hidden="true" onclick="changeIconCoffie(this)"></i>
+                      <i class="fa-solid fa-heart coffieIcon myIclass" onclick="changeIconHeart(this)"></i>
+                      <i class="fa fa-eye coffieIcon myIclass" aria-hidden="true" onclick="changeiconEye(this)"></i>
+                      <i class="fas fa-share coffieIcon myIclass" onclick="changeIconShare(this)"></i>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center" style="font-size: 1vw;">Beans</h5>
+                      <p class="card-text text-center" style="font-size: 1vw;">$45.</p>
+                      <a href="#" class="btn btn-primary" style="font-size: 0.8vw;">Add to Cart</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-02">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-10 col-lg-6">
+                  <div class="subscribe mb-5">
+                      <form action="#" class="subscribe-form">
+          <div class="form-group d-flex">
+            <input type="text" class="form-control rounded-left" placeholder="Enter email address">
+            <input type="submit" value="Subscribe" class="form-control submit px-3">
+          </div>
+        </form>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-4 col-lg-5">
+                  <div class="row">
+                      <div class="col-md-12 col-lg-8 mb-md-0 mb-4">
+                          <h2 class="footer-heading"><a href="#" class="logo">MoreCOffie.com</a></h2>
+                          <p>Nothing better then a fresh cup of coffie in the morning!</p>
+                          <a href="#">read more <span class="ion-ios-arrow-round-forward"></span></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-8 col-lg-7">
+                  <div class="row">
+                      <div class="col-md-3 mb-md-0 mb-4 border-left">
+                          <h2 class="footer-heading">Discover</h2>
+                          <ul class="list-unstyled">
+                <li><a href="#" class="py-1 d-block">Buy &amp; Sell</a></li>
+                <li><a href="#" class="py-1 d-block">Merchant</a></li>
+                <li><a href="#" class="py-1 d-block">Giving back</a></li>
+                <li><a href="#" class="py-1 d-block">Help &amp; Support</a></li>
+              </ul>
+                      </div>
+                      <div class="col-md-3 mb-md-0 mb-4 border-left">
+                          <h2 class="footer-heading">About</h2>
+                          <ul class="list-unstyled">
+                <li><a href="#" class="py-1 d-block">Staff</a></li>
+                <li><a href="#" class="py-1 d-block">Team</a></li>
+                <li><a href="#" class="py-1 d-block">Careers</a></li>
+                <li><a href="#" class="py-1 d-block">Blog</a></li>
+              </ul>
+                      </div>
+                      <div class="col-md-3 mb-md-0 mb-4 border-left">
+                          <h2 class="footer-heading">Resources</h2>
+                          <ul class="list-unstyled">
+                <li><a href="#" class="py-1 d-block">Security</a></li>
+                <li><a href="#" class="py-1 d-block">Global</a></li>
+                <li><a href="#" class="py-1 d-block">Charts</a></li>
+                <li><a href="#" class="py-1 d-block">Privacy</a></li>
+              </ul>
+                      </div>
+                      <div class="col-md-3 mb-md-0 mb-4 border-left">
+                          <h2 class="footer-heading">Social</h2>
+                          <ul class="list-unstyled">
+                <li><a href="#" class="py-1 d-block">Facebook</a></li>
+                <li><a href="#" class="py-1 d-block">Twitter</a></li>
+                <li><a href="#" class="py-1 d-block">Instagram</a></li>
+                <li><a href="#" class="py-1 d-block">Googleplus</a></li>
+              </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row partner-wrap mt-5">
+              <div class="col-md-12">
+                  <div class="row align-items-center">
+                      <div class="col">
+                          <h3 class="mb-0">Our Partner:</h3>
+                      </div>
+                      <div class="col-md-9">
+                          <p class="partner-name mb-0">
+                              <a href="#"><span class="ion-logo-ionic mr-2"></span>Starbucks</a>
+                              <a href="#"><span class="ion-logo-ionic mr-2"></span>Microsoft</a>
+                              <a href="#"><span class="ion-logo-ionic mr-2"></span>Apple</a>
+                              <a href="#"><span class="ion-logo-ionic mr-2"></span>LavAzza</a>
+                              <a href="#"><span class="ion-logo-ionic mr-2"></span>Verona</a>
+                          </p>
+                      </div>
+                      <div class="col text-md-right">
+                          <p class="mb-0"><a href="#" class="btn-custom">See All <span class="ion-ios-arrow-round-forward"></span></a></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row mt-5">
+    <div class="col-md-6 col-lg-8">
+
+      <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+    </div>
+    <div class="col-md-6 col-lg-4 text-md-right">
+        <p class="mb-0 list-unstyled">
+            <a class="mr-md-3" href="#">Terms</a>
+            <a class="mr-md-3" href="#">Privacy</a>
+            <a class="mr-md-3" href="#">Compliances</a>
+        </p>
+    </div>
+  </div>
+      </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src = "../js/popper.js"></script>
+  <script src = "../js/main.js"></script>
+  <script defer src="../js/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
